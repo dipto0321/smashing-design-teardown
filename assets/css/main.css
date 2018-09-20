@@ -14,12 +14,14 @@ body {
 .wrapper-3,
 .wrapper-4 {
   display: grid;
+  position: relative;
 }
 
 .wrapper-1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 172px 800px 800px;
-  grid-template-areas: "h h"
+  grid-template-areas:
+    "h h"
     "al1 al2"
     "al3 al4";
   grid-gap: 3px;
@@ -34,4 +36,21 @@ body {
 .latest-articles {
   border: 1px solid black;
   background: #222;
+}
+
+.tagline {
+  position: absolute;
+  top: 220px;
+  left: 590px;
+}
+.tagline .p1 {
+  width: 300px;
+  height: 34px;
+  background-color: #ededed;
+}
+.tagline .p2 {
+  width: 125px;
+  height: 34px;
+  background-color: #ededed;
+  margin: 0 auto;
 }
