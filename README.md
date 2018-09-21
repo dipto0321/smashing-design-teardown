@@ -1,7 +1,5 @@
 # smashing-design-teardown
 
-#### This is a project from **The Odin Project**. This the [Link](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-teardown) of that project.
-
 In this simple project, we’ll be breaking apart the website for a popular design magazine with which we’re probably familiar by now – **Smashing Magazine**. The goal for this exercise was to start training ourself to think in terms of visual hierarchy, typography and design principles.
 
 ---
