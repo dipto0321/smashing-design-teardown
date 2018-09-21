@@ -27,18 +27,16 @@ body {
     "h h"
     "al1 al2"
     "al3 al4";
-  grid-gap: 3px;
 }
 
 .main-header {
   grid-area: h;
-  border: 1px solid black;
-  background: #555;
+  background: #dfe6e9;
 }
 
 .latest-articles {
-  border: 1px solid black;
-  background: #222;
+  border: 1px solid #555;
+  background: #636e72;
 }
 
 .tagline {
@@ -49,8 +47,8 @@ body {
 .tagline .p1,
 .p2 {
   font-size: 24px;
-  background-color: #ededed;
-  color: #000;
+  background-color: #2d3436;
+  color: #fff;
   margin: 0 auto;
   text-align: center;
 }
@@ -92,4 +90,25 @@ body {
 .banner {
   grid-area: bn;
   background-color: #636e72;
+}
+
+.wrapper-3 {
+  grid-template: 800px 300px 300px 300px 300px / repeat(2, 1fr);
+  grid-template-areas:
+    "ny ny"
+    "pw pw"
+    "ap1 ap2"
+    "ap3 ap4"
+    "ap5 ap6";
+}
+.new-york {
+  grid-area: ny;
+  background-color: #b2bec3;
+}
+.person-of-week {
+  grid-area: pw;
+  background-color: #636e72;
+}
+.author-profile {
+  background-color: #b2bec3;
 }
