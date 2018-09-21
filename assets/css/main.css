@@ -116,3 +116,13 @@ body {
   background-color: #b2bec3;
   border: 1px solid #636e72;
 }
+
+.wrapper-4 {
+  grid-template: 420px 750px 1032px 100px 760px / repeat(4, 1fr);
+  grid-template-areas:
+    "ds ds ds ds"
+    "nb1 nb2 nb3 nb4"
+    "n n n n"
+    "sa sa sa sa"
+    "f f f f";
+}
