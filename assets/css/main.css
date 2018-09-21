@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 html {
-  max-width: 1320px;
-  margin: 0 auto;
+  /* max-width: 1320px;
+  margin: 0 auto; */
 }
 body {
-  margin: 20px;
+  /* margin: 20px; */
   color: white;
 }
 
@@ -72,8 +72,8 @@ body {
 }
 
 .content-old {
-  background-color: #555;
-  border: 1px solid #222;
+  background-color: #b2bec3;
+  border: 1px solid #dfe6e9;
 }
 .content-old h2 {
   font-size: 2em;
@@ -88,7 +88,7 @@ body {
 }
 .ad-div {
   grid-area: ad;
-  background-color: #b2bec3;
+  background-color: #dfe6e9;
 }
 .banner {
   grid-area: bn;
@@ -106,53 +106,46 @@ body {
 }
 .new-york {
   grid-area: ny;
-  background-color: #b2bec3;
+  background-color: #636e72;
 }
 .person-of-week {
   grid-area: pw;
-  background-color: #636e72;
+  background-color: #b2bec3;
 }
 .author-profile {
-  background-color: #b2bec3;
+  background-color: #bdc3c7;
   border: 1px solid #636e72;
 }
 
 .wrapper-4 {
-  grid-template: 420px 750px 1032px 100px 760px / 150px repeat(4, 200px) 150px;
+  grid-template: 420px 750px 1032px 100px 760px / 150px repeat(4, 1fr) 150px;
   grid-template-areas:
     "ds ds ds ds ds ds"
     ". nb1 nb2 nb3 nb4 ."
     "n n n n n n"
-    ". sa sa sa sa ."
+    "sa sa sa sa sa sa"
     "f f f f f f";
-  border: 1px solid red;
-  grid-gap: 2px;
 }
 
 .design-systems {
-  grid-column: 1 / span 6;
-  grid-row: 1 / span 1;
+  grid-area: ds;
   background: #555;
-  color: black;
 }
 
 .nav-block {
-  background: #777;
-  color: black;
+  background: #bdc3c7;
+  border: 1px solid #dfe6e9;
 }
 
-.nav-block:nth-child(1) {
-  grid-area: nb1;
+.newsletter {
+  grid-area: n;
+  background: #636e72;
 }
-
-.nav-block:nth-child(2) {
-  grid-area: nb2;
+.see-all-articles {
+  grid-area: sa;
+  background: #dfe6e9;
 }
-
-.nav-block:nth-child(3) {
-  grid-area: nb3;
-}
-
-.nav-block:nth-child(4) {
-  grid-area: nb4;
+.main-footer {
+  grid-area: f;
+  background: #b2bec3;
 }
