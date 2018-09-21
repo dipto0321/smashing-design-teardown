@@ -118,11 +118,41 @@ body {
 }
 
 .wrapper-4 {
-  grid-template: 420px 750px 1032px 100px 760px / repeat(4, 1fr);
+  grid-template: 420px 750px 1032px 100px 760px / 150px repeat(4, 200px) 150px;
   grid-template-areas:
-    "ds ds ds ds"
-    "nb1 nb2 nb3 nb4"
-    "n n n n"
-    "sa sa sa sa"
-    "f f f f";
+    "ds ds ds ds ds ds"
+    ". nb1 nb2 nb3 nb4 ."
+    "n n n n n n"
+    ". sa sa sa sa ."
+    "f f f f f f";
+  border: 1px solid red;
+  grid-gap: 2px;
+}
+
+.design-systems {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
+  background: #555;
+  color: black;
+}
+
+.nav-block {
+  background: #777;
+  color: black;
+}
+
+.nav-block:nth-child(1) {
+  grid-area: nb1;
+}
+
+.nav-block:nth-child(2) {
+  grid-area: nb2;
+}
+
+.nav-block:nth-child(3) {
+  grid-area: nb3;
+}
+
+.nav-block:nth-child(4) {
+  grid-area: nb4;
 }
