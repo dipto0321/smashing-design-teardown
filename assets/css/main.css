@@ -78,10 +78,13 @@ body {
 .content-old h2 {
   font-size: 2em;
   font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  padding: 15px;
 }
 .content-old p {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
+  padding: 15px;
 }
 .ad-div {
   grid-area: ad;
